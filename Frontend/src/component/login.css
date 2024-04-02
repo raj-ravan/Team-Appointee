@@ -1,0 +1,100 @@
+/* login.css */
+
+	.LoginContainer{
+		background-color: white;
+	}
+
+  .login .avatar {
+     
+	width: 70vh;
+	height: 70vh;
+	margin: 15vh 0 0;
+	border-radius: 50%;
+  }
+  
+  .login h1 {
+	text-align: center;
+
+  }
+  
+  .login form {
+	margin-top: 3vh;
+  }
+  
+  
+  .login input[type="textlogin"],
+  .login input[type="passwordlogin"] {
+	width: 100%;
+	padding: 1.5vh;
+	margin-bottom: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 20px;
+  }
+  .login_btn{
+	margin-left:11vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: 2vh 2vh 2vh ;
+	background-color: #FFA500;
+	color: #fff;
+	border: none;
+	border-radius: 5vh;
+	cursor: pointer;
+
+	}
+  .login a {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(245, 245, 246);
+  }
+  
+  .login .login-provider-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 10px;
+	cursor: pointer;
+  }
+  
+  .login .login-provider-button img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+  }
+  
+
+  .signup-login-divider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+  }
+  
+  .or {
+	margin: 1vh 0;
+	font-weight: bold;
+  }
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+	.login {
+	  width: 80%;
+	}
+  }
+  
+  @media (max-width: 400px) {
+	.login {
+	  width: 100%;
+	}
+  }
+  

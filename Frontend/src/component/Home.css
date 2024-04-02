@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open sans';
+}
+
+/* Crosuel starts */
+.slider-container {
+  /* position: relative; */
+  /* margin: 1.2vh; */
+  width: 100%;
+  height: 100vh;
+
+}
+
+/* Style each slide */
+.slide {
+  display: none;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 12vh;
+
+}
+
+.photo {
+  width: 100%;
+  max-height: 73vh;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2vh;
+  margin-top: -6vh;
+  background: rgba(0, 0, 0, 0.215);
+  color: white;
+  font-weight: bold;
+  font-size: 2vh;
+  transition: 0.6s ease;
+  border: none;
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a semi-transparent black background */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots indicator */
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 2vh;
+  width: 2vh;
+  margin: 0 1.5vh;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* .active,
+.dot:hover {
+   background-color: rgb(46, 126, 231); 
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10000.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* crousel ends */
+.btn {
+  
+  padding: 7px;
+  border-radius: 20px;
+  width: 120px;
+  margin: 10px;
+  background-color: rgb(163, 222, 230);
+}
+.btn:hover {
+  background-color: blue;
+}
+
+.advertisement {
+  height: 50px;
+  width: 100%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.btns {
+ 
+  align-items: center;
+ width: 300px;
+ border-radius: 80px;
+ background-color:#00337C;
+ color: #FFFFFF;
+ justify-content: space-evenly;
+ padding: 20px;
+ margin: 8vh;
+ 
+ /* margin-left: 9%; */
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 33px;
+ }
+ 
+ .btns:hover {
+ background-color:#FFA500;
+ 
+ }
+ .btnss{
+  display: flex;
+  align-items: center;
+  height:10vh;
+  margin-top: 2vh;
+  justify-content: center;
+ }
+
+.box-1,
+.box-2,
+.box-3 {
+  display: flex;
+  border: 2px solid #00337C;
+  ;
+  padding: 10px;
+  margin: 5px;
+}
+
+.sep {
+height: 10px;
+background-image: linear-gradient(90deg,#f0f0f0,#428cd4,#004e9a,#f0f0f0);
+}
+
+.container-banner::before {
+content: " ";
+background: url(https://wallpapercave.com/hospital-wallpapers);
+position :absolute;
+min-height: 250px;
+width: 100%;
+background-attachment: fixed;
+background-position: 50%;
+background-size: cover;
+margin-top: 20px;
+}
+
+#cta {
+  padding: 60px 0;
+  text-align: center;
+}
+#cta h3 {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 400px;
+  border-bottom: 1px solid  #00337C;
+  ;
+  padding: 0 0 20px 0;
+}
+.button-2 {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #fbfcfe;
+  ;
+  color:#fafbfc;
+  ;
+  border-radius: 3px;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+}
+.button-2:hover {
+  background-color: #00337C;
+  color: #fff;
+}
+
+.containerfaq {
+  padding: 1vh;
+  max-width: 100%;
+  height:50vh;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-color:  #ffffffb1;
+  border-radius: 8px;
+  box-shadow: 1vh 2vh 3vh rgba(0, 0, 0, 0.47);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.HomeContainer{
+    min-height: 100vh;
+   
+    /* color  ==  #004e9a   */
+}
+.footer{
+    padding: 40px 0;
+    background-color:#00337C;
+    position: sticky;
+    top: 100%;
+}
+.footer .social{
+    text-align:center;
+    padding-bottom: 25px;
+    color: #FFFFFF;
+
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #FFFFFF;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+    /* color:#BEBEBE */
+    /* color: #297bdf */
+    color: #003049;
+   
+
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    color: #FFFFFF;
+    
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+
+
+}
+
+.footer ul li a:hover{
+    opacity: 0.60;
+}
+
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+/*  image slider after scrolling */
+#slider {
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+}
+#slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+#slider #prev-btn {
+  left: 0;
+}
+
+#slider #next-btn {
+  right: 0;
+}
+
+
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  opacity: 0;
+}
+
+#slider img:first-child {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  #slider {
+    height: 300px;
+  }
+
+  #slider img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #slider {
+    height: 200px;
+  }
+
+  #slider img {
+    height: 200px;
+  }
+}
+
+
+/* content box starts */
+
+
+.mega-container{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height:50vh;
+  
+    
+}
+.container_ak{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+/* position: absolute;
+padding: 10vh; */
+ 
+}
+.home_content{
+  height:5vh;
+  display:flex;
+  font-size: xx-large;
+  font-family: sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+/* .home_content h1{
+  height:5vh;
+} */
+
+.container_ak .box{
+  
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: #f4efef;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+.container_ak .box .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#00337C;
+  transition: .5s;
+  z-index: 1;
+}
+
+.container_ak .box:hover .icon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+}
+.container_ak .box .icon .fa{
+  margin: 0;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: .5s;
+  color: #fff;
+}
+
+
+
+.container_ak .box:hover .icon .fa{
+  font-size: 40px;
+}
+
+.container_ak .box .content{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100%);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+  opacity: 0;
+}
+
+.container_ak .box:hover .content{
+  top: 100px;
+  opacity: 1;
+}
+
+.container_ak .box .content h3{
+  margin: 0 0 10px;
+  padding: 0;
+  color: #000;
+  font-size: 24px;
+}
+.container_ak .box .content p{
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+}
+
+.footer{
+  display: flex;
+  color:white;
+  /* height:40vh; */
+}
+
+
+.footer_detail{
+  display: block;
+width:30%;
+margin-left: 150px;
+
+}
+.footer_detail_title{
+  display:flex;
+  color: white;
+  font-size: 3vh;
+}
+
+.footer_detail_subtitle{
+  font-size:2vh;
+}
+
+.footer_moredetail{
+  display: block;
+  width:20%;
+}
+
+.footer_social{
+  display: flex;
+
+width:30%;
+}
+
+.wrapper{
+  height: 60vh;
+    background-color: #dbe2ef;
+    width:100%; 
+  background-image: url(../images/giphy.gif) ;
+
+  color: #f1f4f6;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+@media screen and (max-width: 1360px) {
+}
+/* content box ends */
+
+
+

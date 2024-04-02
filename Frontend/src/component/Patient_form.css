@@ -1,0 +1,45 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+  .container {
+    display: flex;
+    /* width: 80%; */
+    /* margin: 0 auto; center the container horizontally */
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  
+
+    .main-btn {
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    
+     .main-btn:hover {
+      background: #1f9a9a;
+      border: 2px solid #328181;
+      text-decoration: none;
+      color:#fff;
+    }
+   .form-group .btn-form{
+    background: #1139db;
+    border: 2px solid #2e2ee1;
+    text-decoration: none;
+    color:white;
+   }
+   
+
+      
+      
